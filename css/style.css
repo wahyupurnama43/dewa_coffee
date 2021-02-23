@@ -1066,7 +1066,7 @@ footer .about .unic p{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-[class*=col-]{
+.listing-gallery [class*=col-]{
     padding :0 !important;
 }
 
@@ -1140,11 +1140,145 @@ footer .about .unic p{
     margin-top: 10px;
 }
 
+/* contact us */
+.maps iframe{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 4px 25px rgba(159, 159, 159, 0.25);
+}
+.text-about p{
+    color: #8d8a8d;
+    margin-bottom: 30px;
+}
+.info-me{
+    display: flex;
+}
+.info-me ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    padding-right: 20px;
+}
+
+.info-me ul li.judul{
+    color: #8B8BA5;
+}
+
+.info-me ul li.info{
+    color: #3C3434;
+    font-weight: 600;
+}
+.send-message .judul{
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 132.5%;
+    color: #3C3434;
+    margin-bottom: 20px;
+}
 
 
+.form-row .form-group {
+    padding: 15px 15px 0;
+    align-self: flex-end;
+}
 
+.form-group {
+    position: relative;
+    padding-top: 15px;
+}
 
+.form-control {
+    border: 0;
+    border-radius: 0;
+    padding: 10px 10px;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+}
+.form-control:not(textarea) {
+    height: 44px;
+}
+.form-control + label {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    left: 0px;
+    right: 10px;
+}
+.form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+.form-control:focus + label {
+    color: #8B8BA5;
+}
+.form-control:focus + label, .form-control.has-value + label {
+    font-size: 0.75rem;
+    top: 0;
+}
 
+.no-js .form-control + label {
+    font-size: 0.75rem;
+    top: 0;
+}
+
+.form-row .form-control + label {
+    left: 25px;
+    right: 25px;
+}
+.form-row .line {
+    left: 15px;
+    right: 15px;
+}
+
+.line {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ECECEC;
+    width: 100%;
+}
+.line:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    display: block;
+    background: #ECECEC;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 0 0;
+}
+
+.form-control:focus ~ .line:after {
+    transform: scaleX(1);
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 44px;
+}
+
+/* blog */
+.text-blog h1{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #3C3434;
+    text-transform: capitalize;
+}
+.text-blog p{
+    color: #8d8a8d;
+    font-size: 1.2em;
+}
 
 
 
@@ -1156,7 +1290,12 @@ footer .about .unic p{
 
 /* RESPONSIVE  */
 @media (max-width: 576px) { 
-
+    .info-me{
+        display: block;
+    }
+    .info-me ul{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) { 
@@ -1175,7 +1314,7 @@ footer .about .unic p{
     .text-banner h1 {
         font-size: 50px;
     }
-    .product .col-sm-12 {
+    .product .col-sm-12, .blog .col-sm-12 {
         padding-right: 50px !important;
         padding-left: 50px !important;
         margin-bottom: 20px;
@@ -1206,6 +1345,29 @@ footer .about .unic p{
         font-size: 27px;
     }
     
+    .listing-gallery-img-lg {
+        height: auto;
+    }
+    
+    .copyright{
+        font-size: .9em;
+    }
+    .details_product .judul{
+        font-size: 30px;
+    }
+    .details_product .deskripsi p{
+        font-size: 16px;
+    }
+    .text-about{
+        margin-top: 2rem;
+    }
+    .text-blog h1{
+        font-size: 2.1em;
+    }
+    .text-blog p{
+        font-size: 1em;
+        
+    }
 }
 
 @media (max-width: 992px) { 
@@ -1232,8 +1394,36 @@ footer .about .unic p{
     .details_product {
         margin-top: 20px;
         padding:0 !important;
+        position: relative;
     }
-    
+    .button-buy{
+        text-align: center;
+    }
+    footer .about .logo{
+        display: block;
+    }
+    footer .about{
+        padding:10px 8%;
+        text-align: center;
+    }
+    footer .about ul{
+        margin-left: -2rem;
+    }
+    footer .about .unic h3{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: underline;
+        color: #272042;
+        margin-top: 15px;
+
+    }
+    .company .j-footer {
+        margin-left: 0 !important;
+    }
+    .company .j-footer{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 1200px) { 

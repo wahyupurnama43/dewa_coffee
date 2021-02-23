@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <link rel="shortcut icon" href="./img/logo.png" />
         <!-- link font  -->
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <!-- Bootstrap CSS -->
@@ -19,7 +19,7 @@
         <title>Dewa Coffee</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" >
             <!--  Show this only on mobile to medium screens  -->
             <a class="navbar-brand d-lg-none logo-img" href="#">
                 <img src="./img/logo.png" alt="" />
@@ -32,14 +32,14 @@
             <!--  Use flexbox utility classes to change how the child elements are justified  -->
             <div class="collapse navbar-collapse justify-content-center mt-3" id="navbarToggle">
                 <ul class="navbar-nav">
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="500">
-                        <a class="nav-link nav-color" href="index.html">Home </a>
+                    <li class="nav-item" >
+                        <a class="nav-link nav-color " href="index.html" data-aos="fade-down" data-aos-delay="500">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-color active" href="products.html" data-aos="fade-down" data-aos-delay="600">Product</a>
+                        <a class="nav-link nav-color active " href="products.html" data-aos="fade-down" data-aos-delay="600">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-color" href="#" data-aos="fade-down" data-aos-delay="700"> Contact Us</a>
+                        <a class="nav-link nav-color" href="contact_us.html" data-aos="fade-down" data-aos-delay="700"> Contact Us</a>
                     </li>
                 </ul>
                 <a class="navbar-brand d-none d-lg-block logo-img ml-3" href="#" data-aos="fade-down" data-aos-delay="800">
@@ -50,10 +50,10 @@
                         <a class="nav-link nav-color" href="index.html#testim" data-aos="fade-down" data-aos-delay="900">Review</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-color" href="#" data-aos="fade-down" data-aos-delay="1000">Blog</a>
+                        <a class="nav-link nav-color" href="blog.html" data-aos="fade-down" data-aos-delay="1000">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-color" href="#" data-aos="fade-down" data-aos-delay="1100"> About Us</a>
+                        <a class="nav-link nav-color" href="about_us.html" data-aos="fade-down" data-aos-delay="1100"> About Us</a>
                     </li>
                 </ul>
             </div>
@@ -63,28 +63,28 @@
             <section class="listing-gallery">
                 <div class="grid-noGutter">
                     <div class="col-6_md-12">
-                        <div class="col-12 listing-gallery-img-lg">
+                        <div class="col-12 listing-gallery-img-lg" data-aos="zoom-in" data-aos-delay="300">
                             <img id="active-img" src="./img/kopiarang/kopiarang.jpg" class="responsive-img" />
                         </div>
                         <div class="col-12 grid-noGutter">
-                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm" data-aos="zoom-in" data-aos-delay="400">
                                 <img src="./img/kopiarang/kopiarang2.jpg" alt="A description of the image" class="listing-gallery-img responsive-img" />
                             </div>
-                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm" data-aos="zoom-in" data-aos-delay="500">
                                 <img src="./img/kopigayo/kopigayo.jpg" alt="A description of the image" class="listing-gallery-img responsive-img" />
                             </div>
-                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm" data-aos="zoom-in" data-aos-delay="600">
                                 <img src="./img/kopiarang/kopiarang2.jpg" alt="A description of the image" class="listing-gallery-img responsive-img" />
                             </div>
-                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                            <div class="col-3_md-4_sm-6 listing-gallery-img-sm" data-aos="zoom-in" data-aos-delay="700">
                                 <img src="./img/kopigayo/kopigayo.jpg" alt="A description of the image" class="listing-gallery-img responsive-img" />
                             </div>
                         </div>
                     </div>
                     <div class="col-6_md-12">
                         <div class="details_product">
-                            <div class="judul">Kopi Arabika Gayo</div>
-                            <div class="deskripsi">
+                            <div class="judul" data-aos="fade-left" data-aos-delay="300">Kopi Arabika Gayo</div>
+                            <div class="deskripsi" data-aos="fade-left" data-aos-delay="400">
                                 <p>
                                     Region : Singaraja Bali <br>
                                     Process : Full washed process <br> 
@@ -95,10 +95,12 @@
                                     dipanggang untuk mendapatkan kinerja kopi terbaik terbaik di dunia.
                                 </p>
                             </div>
-                            <div class="price-product">
+                            <div class="price-product" data-aos="fade-left" data-aos-delay="500">
                                 Price : Rp 50.000
                             </div>
-                            <a href="" class="btn btn-coffee">Buy</a>
+                            <div class="button-buy">
+                                <a href="" class="btn btn-coffee" data-aos="fade-left" data-aos-delay="600">Buy</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,11 +109,11 @@
 
         <footer>
             <div class="about">
-                <div class="logo" data-aos="fade-up" data-aos-delay="500">
+                <div class="logo" data-aos="fade-up" data-aos-delay="300">
                     <img src="./img/logo.png" alt="" />
                     <h1>Dewa Coffee</h1>
                 </div>
-                <div class="company" data-aos="fade-up" data-aos-delay="600">
+                <div class="company" data-aos="fade-up" data-aos-delay="400">
                     <h1 class="j-footer">Home</h1>
                     <ul>
                         <li><a href="">Product</a></li>
@@ -121,14 +123,14 @@
                         <li><a href="">Blog</a></li>
                     </ul>
                 </div>
-                <div class="company" data-aos="fade-up" data-aos-delay="700">
+                <div class="company" data-aos="fade-up" data-aos-delay="500">
                     <h1 class="j-footer">Company</h1>
                     <ul>
                         <li><a href="">Terms & Conditions</a></li>
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="company" data-aos="fade-up" data-aos-delay="800">
+                <div class="company" data-aos="fade-up" data-aos-delay="600">
                     <h1 class="j-footer">Be Our Friend</h1>
                     <ul>
                         <li><a href="">Denpasar, Bali</a></li>
