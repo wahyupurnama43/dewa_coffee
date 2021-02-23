@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    AOS.init();
+
     $('.post-module').hover(function() {
         $(this).find('.description').stop().animate({
         height: "toggle",
@@ -114,4 +116,5 @@ $(document).ready(function(){
 
             })
         }
-});
+}); 
+// penutup
